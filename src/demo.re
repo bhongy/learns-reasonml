@@ -1,6 +1,6 @@
 Js.log("Hello, BuckleScript and Reason!");
 
-/* From: http://reasonmlhub.com/exploring-reasonml/ch_syntax-overview.html */
+/* From: http://reasonmlhub.com/exploring-reasonml/toc.html */
 
 /**
  * Basic types and operators
@@ -141,7 +141,8 @@ Js.log({js|äöü|js});
   switch (0, 2) /* tuple */ {
   | (0, 1 | 2 | 3) => "first branch"
   | _ => "second branch"
-  };
+  }
+  |> ignore;
 
   /* can also be used at the top level */
   switch "Monday" {
