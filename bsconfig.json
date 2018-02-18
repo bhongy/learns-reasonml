@@ -3,9 +3,15 @@
 {
   "name": "learns-reasonml",
   "version": "0.1.0",
-  "sources": [
-    "src"
-  ],
+  "sources": {
+    "dir": "src",
+    "subdirs": {
+      "dir": "exploring-reasonml",
+      "subdirs": [
+        "BasicModules"
+      ]
+    }
+  },
   "package-specs": {
     "module": "commonjs",
     "in-source": true
