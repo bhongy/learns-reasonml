@@ -104,9 +104,11 @@ Js.log2("square() =>", square());
 /* The reverse-application operator (|>) :: the _pipe_ operator */
 Js.log(
   4
-  |> x => x * 2
+  /* partially apply an operator `(*)(x, y)` */
+  /* equivalent to `x => x * 2` */
+  |> (*)(2)
   |> string_of_int
-  |> s => s ++ s
+  |> s => s ++ s /* 88 */
 );
 
 /* important tips from: http://reasonmlhub.com/exploring-reasonml/ch_functions.html */
