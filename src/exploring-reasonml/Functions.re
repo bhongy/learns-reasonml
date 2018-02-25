@@ -7,7 +7,7 @@ let plus1 = (x) => x + 1;
 Js.log(plus1(5));
 /* List.map(plus1, [1, 2, 3, 4]); */
 
-/* mutually recursive function */
+/* mutually recursive function - note: `let rec`, `and` */
 let rec even = (x) => x <= 0 ? true : odd(x - 1)
 and odd = (x) => even(x - 1);
 
@@ -16,6 +16,7 @@ logBool(even(2));
 logBool(even(3));
 logBool(odd(3));
 
+/* self recursive function `let rec` */
 let rec factorial = (x) =>
   if (x <= 1) 1 else x * factorial(x - 1);
 
